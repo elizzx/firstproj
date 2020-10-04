@@ -1,0 +1,415 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:wght@400;500;700&display=swap'); 
+ 
+* { 
+    /* Устанавливаем эту опцию, чтобы изюежать путаницы с размерами блоков с падингами */ 
+    box-sizing: border-box; 
+    /* Зануляем отступы для удобства, чтобы не указывать это в элементах "h1-h6", "p" */ 
+    margin: 0; 
+} 
+ 
+body { 
+    /* Задаём основной шрифт, он будет отображаться на всех текстах, если не перебить его как сделано на логотипе */ 
+    font-family: Roboto, sans-serif; 
+} 
+ 
+.container { 
+    /* Задаём максимальную ширину сайта */ 
+    max-width: 1150px; 
+    /* Выравниваем по центру */ 
+    margin: 0 auto; 
+} 
+ 
+/* header section begin */ 
+.header { 
+    background: #EEEFF1; 
+} 
+ 
+.header__wrapper { 
+    /* отступы сверху и снизу */ 
+    padding: 57px 0; 
+    /* Делаем clearfix, потому что если его убрать - поедет вёрстка из-за наших флотов на лого и навигации */ 
+    overflow: hidden; 
+} 
+ 
+.header__logo { 
+    font-family: Revalia, sans-serif; 
+    font-size: 48px; 
+    color: #34547A; 
+    /* "Прибиваем" логл слева */ 
+    float: left; 
+    /* Убираем нижнее подчёткивание ссылок */ 
+    text-decoration: none; 
+    /* Делим картинке и блоку с текстовым контентом ширину контейнера */ 
+    width: 50%; 
+} 
+ 
+.header__nav { 
+    /* "Прибиваем" навигацию справа */ 
+    float: right; 
+} 
+ 
+.header__link { 
+    font-size: 16px; 
+    color: #000000; 
+    margin: 0 21px; 
+    font-weight: 500; 
+    /* Убираем подчёркивание ссылок */ 
+    text-decoration: none; 
+    /* Добавляем анимацию при наведении курсора */ 
+    transition: color .3s; 
+} 
+ 
+/* Добавляем эффект смены цвета при наведении на ссылки навигации */ 
+.header__link:hover { 
+    color: #34547a; 
+    /* Добавляем анимацию при отведении курсора */ 
+    transition: all .3s; 
+} 
+ 
+/* header section end */ 
+ 
+/* design section begin */ 
+.design { 
+    background: #EEEFF1; 
+} 
+ 
+.design__wrapper { 
+    /* Опять clearfix для флотов */ 
+    overflow: hidden; 
+    padding: 140px 0; 
+} 
+ 
+.design__image { 
+    float: left; 
+    width: 50%; 
+} 
+ 
+.design__image img { 
+    /* Ограничивать изображение через width и height не нужно, оно будет само подстраиваться под вёрстку */ 
+    /* Прибиваем картинку справа от нашего блока, который уже занимает 50% от ширины контейнера */ 
+    float: right; 
+    margin-right: 130px; 
+} 
+ 
+.design__content { 
+    float: right; 
+    width: 50%; 
+} 
+ 
+.design__title { 
+    font-weight: 500; 
+    font-size: 48px; 
+    color: #000000; 
+} 
+ 
+.design__text { 
+    font-size: 16px; 
+    line-height: 26px; 
+    color: #727272; 
+    margin-top: 60px; 
+} 
+ 
+.design__button { 
+    /* Добавляем тегу "а" блочное поведение, чтобы работал отступ margin */ 
+    display: inline-block; 
+    background-color: #34547A; 
+    color: white; 
+    padding: 19px 41px; 
+    font-size: 16px; 
+    /* Убираем подчёркивание нашей ссылки */ 
+    text-decoration: none; 
+    margin-top: 60px; 
+} 
+ 
+/* design section end */ 
+ 
+/* about section begin */ 
+.about { 
+    padding-top: 120px; 
+    padding-bottom: 100px; 
+} 
+ 
+.about__wrapper { 
+    /* Задаём максимальную ширину блока, чтобы не растягивать текст по всему контейнеру */ 
+    max-width: 540px; 
+    /* И центрируем всё в этой секции */ 
+    margin: 0 auto; 
+} 
+ 
+.about__title { 
+    font-weight: 500; 
+    font-size: 32px; 
+    text-align: center; 
+    color: #000000; 
+} 
+ 
+.about__text { 
+    margin-top: 50px; 
+    font-size: 16px; 
+    line-height: 26px; 
+    text-align: center; 
+    color: #727272; 
+} 
+/* about section end */ 
+img { 
+    max-width: 100%; 
+} 
+ 
+.projects{ 
+    background: #34547A; 
+    padding-top:50px; 
+    padding-bottom:60px; 
+    overflow: hidden; /* убираем обтекание флота */ 
+} 
+.info { 
+    display: inline-block; 
+    width: calc(100% / 6); /* ширина рассчитается сама через calc */ 
+    float: left;  
+} 
+ 
+.project__img{  
+    float: left;  
+    width: 50%; 
+} 
+ 
+.projects__info { 
+    float: right;  
+    width: 50%; 
+} 
+ 
+.projects__title{ 
+    font-weight: 500; 
+    font-size: 21px; 
+    line-height: 25px; 
+    color: white; 
+ 
+ 
+} 
+.projects__text{ 
+    font-weight: normal; 
+    font-size: 16px; 
+    line-height: 26px; 
+    color: white; 
+ 
+} 
+ 
+ 
+.skills__wrapper{ 
+    padding: 50px; 
+    overflow: hidden; 
+     
+} 
+.skills__image{ 
+    float: right; 
+     
+    width: 500px; 
+} 
+.skills__title{ 
+    font-family: Roboto; 
+    font-weight: 500; 
+    font-size: 32px; 
+    line-height: 37px; 
+    color: #000000; 
+    padding-top: 90px; 
+    padding-bottom: 50px; 
+} 
+    .line { 
+        position: relative; /* задаём элемент, на который будет "опираться" наш блок с position: absolute; */ 
+        width: 50%; 
+        height: 7px; 
+        background:#C4C4C4; 
+         
+    } 
+     
+    .line:after { 
+        content: ""; /* обязательное свойство для отображения псевдо-элемента */ 
+        position: absolute; 
+        top: 0; 
+        right: 30%; 
+        bottom: 0; 
+        left: 0; 
+        background:#34547A; 
+    } 
+    .skills__line {       
+    font-size: 16px; 
+    line-height: 26px; 
+    color: #727272; 
+    } 
+ 
+ 
+    .work { 
+        padding-top: 120px; 
+        padding-bottom: 100px; 
+        background: #EEEFF1; 
+    } 
+     
+    .work__wrapper { 
+         
+        max-width: 540px; 
+        margin: 0 auto; 
+    } 
+    .work__title{ 
+        font-weight: 500; 
+        font-size: 32px; 
+        line-height: 37px; 
+        text-align: center; 
+        color: #000000;      
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    } 
+    .work__text{ 
+        margin-top: 50px; 
+        font-size: 16px; 
+        line-height: 26px; 
+        text-align: center; 
+        color: #727272; 
+         
+    } 
+    .center { 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: block; 
+     } 
+     
+      
+     .gallery__item{ 
+         width: 25%; 
+        display: inline-block; 
+        position: relative;   
+        float: left; 
+        line-height: 0.5; 
+     } 
+ 
+    .gallery__img{ 
+        max-width: 100%; 
+    } 
+    .gallery__bcg{ 
+        opacity: 0; 
+        position: absolute; 
+        top:0; 
+        bottom: 0; 
+        right: 0; 
+        left:0; 
+        background:#34547A 20%; 
+        transition: all 0.3s; 
+    } 
+    .gallery__item:hover .gallery__bcg{ 
+        opacity: 1; 
+        transition: all 0.3s; 
+         
+    } 
+    .gallery__watch{ 
+        position: absolute; 
+        width: 20px; 
+        height: 20px; 
+        top:calc(50% - 10px); 
+        left:calc(50% - 10px) 
+         
+    } 
+     
+        
+    .microsoft{        
+        padding-top:60px; 
+        padding-bottom:60px; 
+        /* overflow: hidden;   */
+    } 
+     
+     
+    .microsoft__img{  
+        display: inline-block; 
+        width: 255px;
+        height: 120px;
+        left: 670px; 
+        top: 3184px;    
+    } 
+     
+    .form { 
+        padding-top: 120px; 
+        padding-bottom: 100px; 
+    } 
+    .form{ 
+        background-color:#EEEFF1; 
+    } 
+    .form__wrapper {        
+        max-width: 540px; 
+        margin: 0 auto;   
+        padding:55px 0;   
+    } 
+     
+    .form__title { 
+        font-weight: 500; 
+        font-size: 32px; 
+        text-align: center; 
+        color: #000000; 
+         
+    } 
+     
+    .form__text { 
+        margin-top: 50px; 
+        font-size: 16px; 
+        line-height: 26px; 
+        text-align: center; 
+        color: #727272; 
+    } 
+    .form__rectangle{ 
+        color:#5F5D5D; 
+        width: 255px; 
+        height: 50px; 
+        text-decoration: none;  
+        border:none;   
+    } 
+    .form__rectanglesms{ 
+        width: 540px; 
+        color:#5F5D5D; 
+        padding: 10px; 
+        font-family: 'Roboto', sans-serif; 
+        border:none; 
+    } 
+    .form__name{ 
+    float: left; 
+    padding-bottom: 10px; 
+    } 
+    .form__lastname{ 
+    float: right; 
+    padding-bottom: 10px; 
+    } 
+     
+    .buton{ 
+        padding: 5px 200px; 
+    } 
+    .form__button {       
+        display: inline-block; 
+        background-color: #34547A; 
+        color: white; 
+        padding: 19px 41px; 
+        font-size: 16px; 
+        text-decoration: none; 
+        margin-top: 60px; 
+    } 
+ 
+ 
+    .footer{ 
+        background: #34547A; 
+        overflow: hidden; 
+        padding:55px 0; 
+    } 
+    .footer__wrapper{ 
+        float:left; 
+    } 
+    
+    .footer__title{ 
+        font-style: normal; 
+        /* font-weight: 500; */ 
+        font-size: 21px; 
+        line-height: 25px; 
+        color: #FFFFFF; 
+    } 
+    .footer__text{ 
+        font-size: 13px; 
+        line-height: 21px; 
+        color: #FFFFFF;   
+    } 
+    .footer__img{ 
+        float: right; 
+     
+    }

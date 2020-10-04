@@ -1,0 +1,337 @@
+
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <!-- 
+        подключение переехало в первую строку css. 
+        в гугл фонтс можно выбрать несколко начертаний шрифта и 
+        найти ещё, добавить другие, после этого взять всю ссылку, 
+        что нам предложат вставить в наши стили 
+     --> 
+</head> 
+<body> 
+<!-- Любая секция начинается с какого-то общего названия --> 
+<header class="header"> 
+    <!-- И содержит в первой вложенности контейнер, который ограничивает вёрстку сайта и центрирует её --> 
+    <div class="container"> 
+        <!-- Далее, для удобства, устанавливаем ещё один див, чтобы не дописывать стили в контейнер --> 
+        <div class="header__wrapper"> 
+            <!-- Ссылка через href="/" на сайт  --> 
+            <a class="header__logo" href="/">MW</a> 
+            <nav class="header__nav"> 
+                <!-- Элементы меню со ссылками на id, чтобы при нажатии переходить к нужной нам секции --> 
+                <a class="header__link" href="#design">ГЛАВНАЯ</a> 
+                <a class="header__link" href="#about">ОБ АВТОРЕ</a> 
+                <a class="header__link" href="#projects">РАБОТЫ</a> 
+                <a class="header__link" href="#work">ПРОЦЕСС</a> 
+                <a class="header__link" href="#form">КОНТАКТЫ</a> 
+            </nav> 
+        </div> 
+    </div> 
+</header> 
+ 
+<div class="main"> 
+    <!-- Секция с первым "id" в нашей навигации --> 
+    <section class="design" id="design"> 
+        <div class="container"> 
+            <div class="design__wrapper"> 
+                <!-- Помещаем картинку в div для того, чтобы было проще выровнять её правее к контенту с текстом --> 
+                <div class="design__image"> 
+                    <img src="./img/design.png" alt="design"> 
+                </div> 
+                <!-- Оборачиваем контент для правой части в отдельный div, чтобы "прибить" его справа от картинки --> 
+                <div class="design__content"> 
+                    <h1 class="design__title">Дизайн и верстка</h1> 
+                    <!-- Лучше испольховать "p" тег для текста --> 
+                    <p class="design__text">Lorem Ipsum - это текст-"рыба", 
+                        часто используемый в печати и вэб-дизайне. 
+                        Lorem Ipsum является стандартной "рыбой" 
+                        для текстов на латинице с начала XVI века. 
+                    </p> 
+                    <a class="design__button" href="#">НАПИСАТЬ МНЕ</a> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- Ещё одна секция с такой же структурой в начале --> 
+    <section class="about" id="about"> 
+        <div class="container"> 
+            <div class="about__wrapper"> 
+                <h3 class="about__title">Обо мне</h3> 
+                <div class="about__text">Lorem Ipsum - это текст-"рыба", 
+                    часто используемый в печати и вэб-дизайне. 
+                    Lorem Ipsum является стандартной "рыбой" 
+                    для текстов на латинице с начала XVI века. 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <section class="projects"> 
+        <div class="container"> 
+            <div class="projects__wrapper"> 
+            </div> 
+        </div> 
+    </section> 
+</div> 
+ 
+<section class="projects" id="projects"> 
+    <div class="container"> 
+        <div class="about__projects"> 
+            <div class="info"> 
+                <div class="project__img"> 
+                    <img src=./img/project.png alt="projects"> 
+                </div> 
+ 
+                <a class="projects__info"> 
+                    <h1 class="projects__title">40+</h1> 
+                    <p class="projects__text">проектов</p> 
+                </a> 
+            </div> 
+ 
+            <div class="info"> 
+                <div class="project__img"> 
+                    <img src=./img/project.png alt="projects"> 
+                </div> 
+ 
+                <a class="projects__info"> 
+                    <h1 class="projects__title">40+</h1> 
+                    <p class="projects__text">проектов</p> 
+                </a> 
+            </div> 
+ 
+            <div class="info"> 
+                <div class="project__img"> 
+                    <img src=./img/project.png alt="projects"> 
+                </div> 
+ 
+                <a class="projects__info"> 
+                    <h1 class="projects__title">40+</h1> 
+                    <p class="projects__text">проектов</p> 
+                </a> 
+            </div> 
+ 
+            <div class="info"> 
+                <div class="project__img"> 
+                    <img src=./img/project.png alt="projects"> 
+                </div> 
+ 
+                <a class="projects__info"> 
+                    <h1 class="projects__title">40+</h1> 
+                    <p class="projects__text">проектов</p> 
+                </a> 
+            </div> 
+ 
+            <div class="info"> 
+                <div class="project__img"> 
+                    <img src=./img/project.png alt="projects"> 
+                </div> 
+ 
+                <a class="projects__info"> 
+                    <h1 class="projects__title">40+</h1> 
+                    <p class="projects__text">проектов</p> 
+                </a> 
+            </div> 
+ 
+            <div class="info"> 
+                <a class="project__img"> 
+                    <img src=./img/project.png alt="projects"> 
+                </a> 
+ 
+                <a class="projects__info"> 
+                    <h1 class="projects__title">40+</h1> 
+                    <p class="projects__text">проектов</p> 
+                </a> 
+            </div> 
+        </div> 
+    </div> 
+</section> 
+ 
+ 
+<div class="main"> 
+    <section class="skills" id="skills"> 
+        <div class="container"> 
+            <div class="skills__wrapper"> 
+                 
+                <div class="skills__image"> 
+                    <img src="./img/photo.png" alt="skills"> 
+                </div> 
+                <h3 class="skills__title">Мои навыки</h3> 
+                <html lang="en"> 
+ 
+ 
+    <div class="box"> 
+        <div class="skills__line">Adope Photoshop<br></div> 
+        <div class="line"></div>     
+    </div> 
+    <br> 
+    <div class="box"> 
+        <div class="skills__line">Adope Photoshop<br></div> 
+        <div class="line"></div>        
+    </div> 
+    <br> 
+    <div class="box"> 
+        <div class="skills__line">Adope Photoshop<br></div> 
+        <div class="line"></div>        
+    </div> 
+     
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <div class="main"> 
+        <section class="work" id="work"> 
+            <div class="container"> 
+                <div class="work__wrapper"> 
+ 
+<h3 class="work__title">Как я работаю</h3> 
+                <div class="work__text">Lorem Ipsum - это текст-"рыба", 
+                    часто используемый в печати и вэб-дизайне. 
+                    Lorem Ipsum является стандартной "рыбой" 
+                    для текстов на латинице с начала XVI века. 
+                </div> 
+               <br><br><br> 
+                <video class="center"  src="./video/video.mp4" width="400"  controls autobuffer> 
+                    <p> Your browser does not support the video</p> 
+                </video>   
+                </div>  
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+ 
+ 
+    <section class="gallery" id=gallery> 
+       <div class="gallery__wrapper">    
+        <div class="gallery__item"> 
+            <img class="gallery__img" src="./img/1.png"> 
+            <div class="gallery__bcg"> 
+                <img class="gallery__watch" src="./img/view.png"> 
+            </div> 
+        </div> 
+ 
+        <div class="gallery__item"> 
+            <img class="gallery__img" src="./img/2.png"> 
+            <div class="gallery__bcg"> 
+                <img class="gallery__watch" src="./img/view.png"> 
+            </div> 
+        </div>
+
+
+<div class="gallery__item"> 
+            <img class="gallery__img" src="./img/1.png"> 
+            <div class="gallery__bcg"> 
+                <img class="gallery__watch" src="./img/view.png"> 
+            </div> 
+        </div> 
+ 
+        <div class="gallery__item"> 
+            <img class="gallery__img" src="./img/2.png"> 
+            <div class="gallery__bcg"> 
+                <img class="gallery__watch" src="./img/view.png"> 
+            </div> 
+        </div>   
+        
+        <div class="gallery__item"> 
+            <img class="gallery__img" src="./img/1.png"> 
+            <div class="gallery__bcg"> 
+                <img class="gallery__watch" src="./img/view.png"> 
+            </div> 
+        </div> 
+ 
+        <div class="gallery__item"> 
+            <img class="gallery__img" src="./img/2.png"> 
+            <div class="gallery__bcg"> 
+                <img class="gallery__watch" src="./img/view.png"> 
+            </div> 
+        </div>   
+        <div class="gallery__item"> 
+            <img class="gallery__img" src="./img/1.png"> 
+            <div class="gallery__bcg"> 
+                <img class="gallery__watch" src="./img/view.png"> 
+            </div> 
+        </div> 
+ 
+        <div class="gallery__item"> 
+            <img class="gallery__img" src="./img/2.png"> 
+            <div class="gallery__bcg"> 
+                <img class="gallery__watch" src="./img/view.png"> 
+            </div> 
+        </div>   
+        </div> 
+    </section> 
+ 
+ 
+    <section class="microsoft" id="microsoft"> 
+        <div class="container"> 
+            <div class="about__microsoft"> 
+                 
+                    <div class="microsoft__img"> 
+                        <img src=./img/microsoft.png alt="projects"> 
+                    </div> 
+     
+                    <div class="microsoft__img"> 
+                        <img src=./img/microsoft.png alt="projects"> 
+                    </div> 
+                     
+                    <div class="microsoft__img"> 
+                        <img src=./img/microsoft.png alt="projects"> 
+                    </div> 
+     
+                    <div class="microsoft__img"> 
+                        <img src=./img/microsoft.png alt="projects"> 
+                    </div> 
+    </div> 
+        </div> 
+        </section> 
+   
+         
+        <section class="form" id="form"> 
+            <div class="container"> 
+                <div class="form__wrapper"> 
+                    <h3 class="form__title">Хотите веб-сайт?</h3> 
+                    <div class="form__text">Lorem Ipsum - это текст-"рыба", 
+                        часто используемый в печати и вэб-дизайне. 
+                        Lorem Ipsum является стандартной "рыбой" 
+                        для текстов на латинице с начала XVI века. 
+                    </div> 
+                    <div class="form__name"> 
+                    <input class="form__rectangle" type="text" placeholder="Ваше имя"> 
+                    </div> 
+ 
+                    <div class="form__lastname"> 
+                    <input class="form__rectangle" type="text" placeholder="Ваш e-mail"> 
+                    </div> 
+ 
+                    <div class="form__sms"> 
+                        <textarea class="form__rectanglesms" type="text" placeholder="Сообщение" name="" id="" cols="30" rows="10"></textarea> 
+                    </div> 
+                     
+                    <div class="buton"> 
+                    <a class="form__button" href="#">ОТПРАВИТЬ</a> 
+                </div> 
+                </div> 
+            </div> 
+        </section> 
+ 
+<footer class="footer"> 
+    <div class="container"> 
+        <div class="footer__wrapper"> 
+            <h3 class="footer__title">Иван Иванов</h3> 
+            <br> 
+            <div class="footer__text">(с) 2018. Все права защищены.</div>         
+        </div> 
+        <div class="footer__img"> 
+            <img src=./img/vk.png alt="footer"> 
+        </div> 
+    </div> 
+</footer> 
+</body> 
+</html>
