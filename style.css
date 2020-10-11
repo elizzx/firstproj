@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:wght@400;500;700&display=swap'); 
- 
+
 * { 
     /* Устанавливаем эту опцию, чтобы изюежать путаницы с размерами блоков с падингами */ 
     box-sizing: border-box; 
@@ -413,3 +413,212 @@ img {
         float: right; 
      
     }
+    @media only screen and (max-width:1123px){
+        .line { 
+            width: 42%; 
+            height: 7px;      
+        } 
+    }
+    @media only screen and (max-width:992px){
+        .form__wrapper , .work__wrapper , .about__wrapper , .design__wrapper , .footer__wrapper , 
+        .header__wrapper , .skills__wrapper {
+            width: 750px;
+            padding: 125px 0;
+        }
+        
+        .container { 
+           max-width: 990px;   
+        } 
+        .header__wrapper { 
+            padding: 30px 0;  
+        } 
+        .header__logo { 
+            font-size: 38px;   
+        } 
+     
+         
+        .design__image img { 
+        padding-left: 10px;
+            margin-right: 40px; 
+        } 
+         
+         
+        .design__title { 
+            font-weight: 30; 
+            font-size: 35px; 
+        } 
+         
+        .design__text { 
+            font-size: 14px; 
+            line-height: 20px; 
+            margin-top: 50px; 
+        } 
+         
+        .design__button {  
+            padding: 19px 38px; 
+            font-size: 14px; 
+            margin-top: 50px; 
+        } 
+         
+        .about { 
+            padding-top: 50px; 
+            padding-bottom: 50px; 
+        } 
+         .about__wrapper{
+             padding: 30px;
+         }
+      
+        .about__title { 
+            font-weight: 400; 
+            font-size: 30px; 
+           
+        } 
+         
+        .about__text { 
+            margin-top: 50px; 
+            font-size: 16px; 
+         
+        } 
+       
+        .projects{ 
+            padding-top:30px; 
+            padding-bottom:40px; 
+        } 
+      
+        .project__img{  
+            float: left;  
+            width: 50%; 
+        } 
+         
+         
+        .projects__title{ 
+            font-weight: 400; 
+            font-size: 21px; 
+            line-height: 25px;         
+        } 
+        .projects__text{ 
+            font-weight: normal; 
+            font-size: 16px; 
+            line-height: 26px; 
+        } 
+         
+         
+        .skills__wrapper{ 
+            padding: 40px;                 
+        } 
+        .skills__image{     
+            width: 400px; 
+            padding-left: 30px;
+            padding-top: 20px;
+        } 
+        .skills__title{   
+            font-weight: 400; 
+            font-size: 32px; 
+            line-height: 37px; 
+            padding-top: 90px; 
+            padding-bottom: 50px; 
+        } 
+            .line { 
+                width: 40%; 
+                height: 7px;      
+            } 
+             
+            /* .skills__line {       
+            font-size: 16px; 
+            line-height: 26px; 
+            }  */
+         
+         
+            .work { 
+                padding-top: 25px; 
+                padding-bottom: 25px; 
+            } 
+             
+        
+            .work__title{ 
+                font-weight: 400; 
+                font-size: 32px; 
+                line-height: 37px; 
+            } 
+            .work__text{ 
+                margin-top: 35px; 
+                font-size: 16px; 
+                line-height: 26px;      
+            } 
+           
+        
+            .microsoft{        
+                padding-top:60px; 
+                padding-bottom:60px; 
+            } 
+             
+             
+            .microsoft__img{  
+                width: 300px;
+                height: 150px;
+                left: 670px; 
+                top: 3184px;   
+                padding-left: 110px;
+            } 
+             
+            .form { 
+                padding-top: 70px; 
+                padding-bottom: 70px; 
+            } 
+            .form__wrapper {        
+                max-width: 540px; 
+                margin: 0 auto;   
+                padding:55px 0;   
+            } 
+             
+            .form__title { 
+                font-weight: 400; 
+                font-size: 32px;     
+            } 
+             
+            .form__text { 
+                margin-top: 50px; 
+                font-size: 14px; 
+                line-height: 26px; 
+            } 
+            .form__rectangle{ 
+                width: 255px; 
+                height: 50px;  
+            } 
+            .form__rectanglesms{ 
+                width: 540px; 
+                padding: 10px;  
+            } 
+            .form__name{ 
+            padding-bottom: 10px; 
+            } 
+            .form__lastname{ 
+            padding-bottom: 10px; 
+            } 
+             
+            .buton{ 
+             padding: 5px 200px; 
+            } 
+            .form__button {       
+                padding: 19px 41px; 
+                font-size: 16px;  
+                margin-top: 60px; 
+            } 
+         
+         
+            .footer{ 
+                padding:10px 0; 
+            } 
+            
+            .footer__title{ 
+                font-size: 21px; 
+                line-height: 25px; 
+            } 
+            .footer__text{ 
+                font-size: 13px; 
+                line-height: 21px; 
+            } 
+            .footer__img{
+             /* ????? */
+            }
+         }
